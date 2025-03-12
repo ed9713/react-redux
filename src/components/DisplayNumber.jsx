@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 
 class DisplayNumber extends Component {
   render() {
-    return (
+
+    console.log(this.props.number)
+    return (    
+
       <div>
         <h1>Display number2-1-1</h1>
-        <input type="text" value="0"></input>
+        <input type="text" value={this.props.number} readOnly></input>
        </div>
     )
   }
 }
-
 
 export default DisplayNumber;
