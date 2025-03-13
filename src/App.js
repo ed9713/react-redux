@@ -15,7 +15,7 @@ class App extends Component {
         <AddNumberRoot onClick={function(size){
             this.setState({number : this.state.number + Number(size)}); 
         }.bind(this)}></AddNumberRoot>
-        <DisplayNumberRoot number={this.state.number}></DisplayNumberRoot>
+        <DisplayNumberRoot></DisplayNumberRoot>
       </div>
     )
   }
