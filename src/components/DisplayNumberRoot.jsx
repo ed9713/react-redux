@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DisplayNumber from './DisplayNumber';
+import DisplayNumberContainer from '../Containers/DisplayNumberContainer';
 
 
 class DisplayNumberRoot extends Component {
@@ -10,7 +11,10 @@ class DisplayNumberRoot extends Component {
       return (
         <div>
           <h1>Display Number Root 2-1</h1>
-          <DisplayNumber number={this.props.number}></DisplayNumber>
+          <DisplayNumberContainer unit="kg" 
+            abcd="abcdddd"
+            test="testtest"
+            ></DisplayNumberContainer>
         </div>
       )
     }

@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import AddNumber from './AddNumber';
-
+import AddNumber from '../Containers/AddNumber'
 
 class AddNumberRoot extends Component {
   render() {
     return (
       <div>
         <h1>Add Number Root 1-1</h1>
-        <AddNumber onClick={function(size){
-                console.log(" AddNumberRoot " + size);
-                this.props.onClick(size);
-        }.bind(this)}></AddNumber>
+        <AddNumber ></AddNumber>
       </div>
     )
   }
